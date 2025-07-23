@@ -1,0 +1,105 @@
+#intro{
+    height: calc(100vh - 4rem );
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.bg{
+    position: absolute;
+    top:-4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height:100vh ;
+    
+}
+.introContent{
+    height: 100vh;
+    width:100vw ;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: column;
+    justify-content: center;
+    align-items: right;
+
+}
+.Hello{
+    font-size: 1.75rem;
+   font-weight: 100; 
+}
+.introName{
+    color: rgb(199, 130, 27);
+}
+.introPara{
+    font-size: medium;
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+}
+.btn{
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 2rem;
+    border-radius:2rem ;
+}
+
+@media screen and (max-width:840px){
+    .bg{
+        right: -10vw;
+    }
+    .introContent{
+        font-size: 10vw;
+    }
+    .Hello{
+        font: size 4.5vw; ;
+    }
+}
+@media screen and (max-width:840px){
+    .bg{
+        right:-20vw ;
+    }
+}
+/* Basic Button Styles */
+.btn {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none; /* Removes underline for links */
+  }
+  
+  /* Hover effect */
+  .btn:hover {
+    background-color: #333;
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  /* Focus effect */
+  .btn:focus {
+    outline: none; /* Removes default focus outline */
+    box-shadow: 0 0 10px rgba(89, 90, 89, 0.6); /* Green shadow when focused */
+  }
+  
+  /* Active effect (when clicked) */
+  .btn:active {
+    transform: translateY(1px); /* Slightly presses the button down */
+    background-color: #333; /* Darker green on click */
+  }
+  
+  /* Disabled Button Styles */
+  .btn:disabled {
+    background-color: #b0bec5; /* Disabled color */
+    cursor: not-allowed;
+    transform: none;
+  }
+  

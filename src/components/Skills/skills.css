@@ -1,0 +1,110 @@
+//* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Skills Section Styles */
+.skills-section {
+  background-color:#f9f9f9;
+  padding: 50px 20px;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.skills-container h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  align-items: start;
+}
+
+/* Skill Item Styles */
+.skill-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Skill Icon Styles */
+.skill-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-item h3 img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.skill-item p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .skills-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .skill-item {
+    padding: 15px;
+  }
+
+  .skill-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .skill-item p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .skill-item {
+    padding: 10px;
+  }
+
+  .skill-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .skill-item p {
+    font-size: 0.9rem;
+  }
+}
